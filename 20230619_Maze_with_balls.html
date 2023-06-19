@@ -416,11 +416,11 @@
 		    // The first parameter can be used to specify which mesh to import. Here we import all meshes
         //   const resultPromise = BABYLON.SceneLoader.ImportMeshAsync("", "", "20230514_circular_maze.gltf", scene);
 
-		    BABYLON.SceneLoader.ImportMesh("", "", "20230514_circular_maze.gltf", scene, function (newMeshes) {
+		    BABYLON.SceneLoader.ImportMesh("", "", "20230513_circular_maze.gltf", scene, function (newMeshes) {
              
 			    var maze =  newMeshes[1];
                 camera.target = maze;
-			     maze.scaling = new BABYLON.Vector3(30,30,30);
+		//	     maze.scaling = new BABYLON.Vector3(30,30,30);
 
           });
 
