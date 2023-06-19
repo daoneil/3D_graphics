@@ -420,6 +420,7 @@
              
 			    var maze =  newMeshes[0];
 			    maze.checkCollisions = true;
+			    maze.physicsImpostor = new BABYLON.PhysicsImpostor(border0, BABYLON.PhysicsImpostor.BoxImpostor, { mass: 0 }, scene);
                 //            camera.target = maze;
 		//	     maze.scaling = new BABYLON.Vector3(30,30,30);
 
